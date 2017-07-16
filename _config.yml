@@ -1,12 +1,12 @@
 # Site settings
-title: jockchou blog
-email: jockchou@qq.com
+title: Ivan Lim blog
+email: 1003804017@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jockchou.github.io" # the base hostname & protocol for your site
+url: "https://ivanlim94.github.io" # the base hostname & protocol for your site
 
 
 # Sidebar filter
@@ -23,7 +23,7 @@ github:   jockchou
 
 
 # Comment
-duoshuo_shortname: jockchou
+duoshuo_shortname: Ivan Lim
 
 
 # Google Analytics
