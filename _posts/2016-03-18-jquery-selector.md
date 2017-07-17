@@ -10,10 +10,10 @@ tags: 选择器 jquery 原创
 `var div1 = $div.get(0);`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //方法1：dom对象转jquery对象<br/>
 `var div2=$div[0];`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//方法2：dom对象转jquery对象
 ***
-## 2. 常规选择器： ##
+## 2. 常规选择器: ##
 	‘#’		:id选择器		源码getElementById()
 	‘.’		:类选择器		源码getElementsByClassName()
-	‘xx’	:xx元素选择器		源码getElementsByTagName()
+	‘xx’		:xx元素选择器		源码getElementsByTagName()
 	‘*’		:全选择器
 
 ## 3. 层选择器： ##
@@ -23,23 +23,23 @@ tags: 选择器 jquery 原创
 	‘+’		:相邻兄弟选择
 	‘~’		:一般兄弟。匹配参考选择器的所有兄弟
 
-## 4. 筛选选择器： ##
+## 4. 筛选选择器 ##
 ###### 筛选选择器用法与css伪元素相似，以‘:’当头，但其中属性筛选选择器例外，以'[ ]'限定 ######
 
-### 4.1 基本筛选 ###
-	‘:first’			:匹配第一个元素
-	‘:last’				:匹配最后一个
-	‘not(selector)’ 	:匹配除指定selector以外的所有
+### 4.1 基本筛选: ###
+	‘:first’		:匹配第一个元素
+	‘:last’		:匹配最后一个
+	‘not(selector)’ 		:匹配除指定selector以外的所有
 	‘:eq(index)’		:匹配第index个
 	‘:gt(index)’		:匹配索引大于index的所有
 	‘:lt(index)’		:匹配索引小于index的所有
-	‘:even’				:匹配偶数索引
-	‘:odd’				:匹配奇数索引
+	‘:even’		:匹配偶数索引
+	‘:odd’		:匹配奇数索引
 	以下不常用
-	‘:header’			:匹配标题元素，如h1--h4
-	‘:lang(language)’	:匹配指定语言的所有元素
-	‘:root’				:匹配该文档的根元素
-	‘:animated’			:选择正在指定动画效果的所有元素
+	‘:header’	:匹配标题元素，如h1--h4
+	‘:lang(language)’		:匹配指定语言的所有元素
+	‘:root’		:匹配该文档的根元素
+	‘:animated’		:选择正在指定动画效果的所有元素
 
 ### 4.2 内容筛选： ###
 ##### 根据子元素或者文本内容来筛选 #####
@@ -54,9 +54,10 @@ tags: 选择器 jquery 原创
 **ps:** 若元素占据文档一定空间，则被认为是可见的。
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
 ***
+
 ### 4.4 属性筛选： ###
 ###### 基于属性名和值筛选 ######
-	‘[attr]’			:选择具有指定属性的元素，不限制值
+	‘[attr]’	:选择具有指定属性的元素，不限制值
 	‘[attr='value']’	:选择指定属性值等于value的元素。
 	‘[attr*='value']’	:选择指定属性具有包含value的元素
 	以下不常用
