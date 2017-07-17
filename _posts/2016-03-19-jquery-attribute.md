@@ -7,11 +7,14 @@ tags: 属性与样式 jQuery 原创
 ---
 
 ## 1 .atrr( )和removeAttr( ) ##
-	1个参数：	'attr'								获取该属性值
+	1个参数：	'attr'					获取该属性值
 			{'attr1':'val1','attr2':'val2',..}	传入对象设置属性值
 	2个参数：	'attr','val'	设置属性值
-			'attr',func		设置属性的函数值
->func回调函数接收元素的**索引位置和该元素attr值**<br/>
+			'attr',func	设置属性的函数值
+
+
+
+> func回调函数接收元素的**索引位置和该元素attr值**<br/>
 >eg：<br/>
 >$('xx').attr('id',function(index,val){<br>
 >&emsp;console.log('当前正在处理第'+ i +'个元素');<br>
@@ -46,26 +49,28 @@ removeAttr('attr')	:移除一个属性
 	.removeClass(str);
 	.removeClass(function(index,currentClass));返回一个或多个要删除的样式名
 
->**注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
+
+> **注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
 
 样式切换：
 
 	.toggleClass(className);若有该类，则删除；若无则添加。实现切换
 
 ## 4 .css( ) ##
-	1个参数	'property'			获取该css样式的值
+	1个参数	'property'				获取该css样式的值
 		{'pro1':'val1','pro2':'val2',...}	批量设置css样式值
-	2个参数	'property','val'	设置css样式值
+	2个参数	'property','val'			设置css样式值
 		'property',function(index,val)
 
->func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
+
+> func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
 
 **ps：** .css( )方法设置的样式要**优先**于.addClass( )方法设置的样式
 
 ## 5 临时数据存储 ##
 静态接口：<br>
 
-	jQuery.data(element,key,value);	存数据
+	jQuery.data(element,key,value);		存数据
 	jQuery.data(element,key);		取数据
 	jQuery.removeData(element [,name]);	删除数据
 
