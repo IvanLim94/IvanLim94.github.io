@@ -13,11 +13,11 @@ tags: 属性与样式 jQuery 原创
 			'attr',func	设置属性的函数值
 
 func回调函数接收元素的**索引位置和该元素attr值**<br/>
->eg：<br/>
->$('xx').attr('id',function(index,val){<br>
->&emsp;console.log('当前正在处理第'+ i +'个元素');<br>
->&emsp;console.log('该被处理元素的attr值为：'+ val );<br>
->})<br>
+eg：<br/>
+	$('xx').attr('id',function(index,val){<br>
+		console.log('当前正在处理第'+ i +'个元素');<br>
+		console.log('该被处理元素的attr值为：'+ val );<br>
+	})<br>
 
 removeAttr('attr')	:移除一个属性
 
@@ -46,14 +46,14 @@ func回调函数接收 **元素的数组索引和该元素内的html值**<br/>
 样式删除：
 
 	.removeClass(str);
-	.removeClass(function(index,currentClass));返回一个或多个要删除的样式名
+	.removeClass(function(index,currentClass));	返回一个或多个要删除的样式名
 
 
 **注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
 
 样式切换：
 
-	.toggleClass(className);若有该类，则删除；若无则添加。实现切换
+	.toggleClass(className);	若有该类，则删除；若无则添加。实现切换
 
 ## 4 .css( ) ##
 	1个参数	'property'				获取该css样式的值
@@ -62,7 +62,7 @@ func回调函数接收 **元素的数组索引和该元素内的html值**<br/>
 		'property',function(index,val)
 
 
-> func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
+func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
 
 **ps：** .css( )方法设置的样式要**优先**于.addClass( )方法设置的样式
 
