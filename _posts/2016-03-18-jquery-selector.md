@@ -49,8 +49,8 @@ tags: 选择器 jquery 原创
 ### 4.3可见性筛选： ###
 	‘:visible’			:选择所有显示元素
 	‘:hidden’			:选择所有隐藏元素
-**ps：**若元素占据文档一定空间，则被认为是可见的。
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
+**ps:** 若元素占据文档一定空间，则被认为是可见的。
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
 ***
 ### 4.4 属性筛选： ###
 ####### 基于属性名和值筛选 #######
@@ -70,8 +70,8 @@ tags: 选择器 jquery 原创
 	‘:only-child’				:选择所有作为其父元素的唯一子元素的元素
 	‘:nth-child(index)’			:选择所有作为其父元素的第index个子元素的元素
 	‘:nth-last-child(index)’	:选择所有作为其父元素的倒数第index个子元素的元素
->如以下html结构:
->
+如以下html结构:
+    
 	<div>
 		<div>
 			<a>1</a>
