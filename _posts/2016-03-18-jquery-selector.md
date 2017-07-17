@@ -5,7 +5,7 @@ date: 2015-07-23 10:21:49
 categories: Jquery
 tags: 选择器 jquery 原创
 ---
-## 1. Jquery对象与DOM转换：##
+## 1. Jquery对象与DOM转换： ##
 `$(document.getElementById('div'))`;//jquery对象转dom对象  
 `var div1 = $div.get(0);`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//方法1：dom对象转jquery对象<br/>
 `var div2=$div[0];`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//方法2：dom对象转jquery对象
@@ -13,7 +13,7 @@ tags: 选择器 jquery 原创
 ## 2. 常规选择器： ##
 	‘#’		:id选择器		源码getElementById()
 	‘.’		:类选择器		 源码getElementsByClassName()
-	‘xx’	:xx元素选择器	  源码getElementsByTagName()
+	‘xx’	:xx元素选择器	 	源码getElementsByTagName()
 	‘*’		:全选择器
 ## 3. 层选择器： ##
 	通过与参考点选择器的关系选择
@@ -22,7 +22,7 @@ tags: 选择器 jquery 原创
 	‘+’		:相邻兄弟选择
 	‘~’		:一般兄弟。匹配参考选择器的所有兄弟
 
-## 4. 筛选选择器：##
+## 4. 筛选选择器： ##
 ###### 筛选选择器用法与css伪元素相似，以‘:’当头，但其中属性筛选选择器例外，以'[ ]'限定 ######
 ### 4.1 基本筛选 ###
 	‘:first’			:匹配第一个元素
@@ -39,20 +39,20 @@ tags: 选择器 jquery 原创
 	‘:root’				:匹配该文档的根元素
 	‘:animated’			:选择正在指定动画效果的所有元素
 
-### 4.2 内容筛选：###
+### 4.2 内容筛选： ###
 #######根据子元素或者文本内容来筛选
 	‘:contains(text)’	:选择所有包含指定文本的元素
 	‘:has(selector)’	:选择所有至少包含指定selector的元素
 	‘:parent’			:选择所有含有子元素或者文本的元素
 	‘:empty’			:选择所有不含子元素或者文本的元素
 
-### 4.3可见性筛选：###
+### 4.3可见性筛选： ###
 	‘:visible’			:选择所有显示元素
 	‘:hidden’			:选择所有隐藏元素
 **ps：**若元素占据文档一定空间，则被认为是可见的。
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
 ***
-### 4.4 属性筛选：###
+### 4.4 属性筛选： ###
 ####### 基于属性名和值筛选 #######
 	‘[attr]’			:选择具有指定属性的元素，不限制值
 	‘[attr='value']’	:选择指定属性值等于value的元素。
