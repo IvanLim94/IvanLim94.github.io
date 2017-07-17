@@ -29,15 +29,15 @@ tags: 选择器 jquery 原创
 ### 4.1 基本筛选: ###
 	‘:first’		:匹配第一个元素
 	‘:last’		:匹配最后一个
-	‘not(selector)’ 		:匹配除指定selector以外的所有
+	‘not(selector)’		:匹配除指定selector以外的所有
 	‘:eq(index)’		:匹配第index个
 	‘:gt(index)’		:匹配索引大于index的所有
 	‘:lt(index)’		:匹配索引小于index的所有
 	‘:even’		:匹配偶数索引
 	‘:odd’		:匹配奇数索引
 	以下不常用
-	‘:header’	:匹配标题元素，如h1--h4
-	‘:lang(language)’		:匹配指定语言的所有元素
+	‘:header’		:匹配标题元素，如h1--h4
+	‘:lang(language)’	:匹配指定语言的所有元素
 	‘:root’		:匹配该文档的根元素
 	‘:animated’		:选择正在指定动画效果的所有元素
 
@@ -45,19 +45,20 @@ tags: 选择器 jquery 原创
 ##### 根据子元素或者文本内容来筛选 #####
 	‘:contains(text)’	:选择所有包含指定文本的元素
 	‘:has(selector)’	:选择所有至少包含指定selector的元素
-	‘:parent’			:选择所有含有子元素或者文本的元素
-	‘:empty’			:选择所有不含子元素或者文本的元素
+	‘:parent’		:选择所有含有子元素或者文本的元素
+	‘:empty’		:选择所有不含子元素或者文本的元素
 
 ### 4.3可见性筛选： ###
 	‘:visible’			:选择所有显示元素
 	‘:hidden’			:选择所有隐藏元素
+
 **ps:** 若元素占据文档一定空间，则被认为是可见的。
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
 ***
 
 ### 4.4 属性筛选： ###
 ###### 基于属性名和值筛选 ######
-	‘[attr]’	:选择具有指定属性的元素，不限制值
+	‘[attr]’		:选择具有指定属性的元素，不限制值
 	‘[attr='value']’	:选择指定属性值等于value的元素。
 	‘[attr*='value']’	:选择指定属性具有包含value的元素
 	以下不常用
@@ -69,11 +70,12 @@ tags: 选择器 jquery 原创
 
 ### 4.5 子元素筛选：(不常用) ###
 ###### 根据参考元素和他父元素的关系来筛选 ######
-	‘:first-child’				:选择所有作为其父元素的第一个子元素的元素
-	‘:last-child’				:选择所有作为其父元素的最后一个子元素的元素
-	‘:only-child’				:选择所有作为其父元素的唯一子元素的元素
-	‘:nth-child(index)’			:选择所有作为其父元素的第index个子元素的元素
+	‘:first-child’		:选择所有作为其父元素的第一个子元素的元素
+	‘:last-child’			:选择所有作为其父元素的最后一个子元素的元素
+	‘:only-child’			:选择所有作为其父元素的唯一子元素的元素
+	‘:nth-child(index)’		:选择所有作为其父元素的第index个子元素的元素
 	‘:nth-last-child(index)’	:选择所有作为其父元素的倒数第index个子元素的元素
+
 如以下html结构:
     
 	<div>
@@ -90,17 +92,17 @@ tags: 选择器 jquery 原创
 			<a>6</a>
 		</div>
 	</div>
-<br>
+
 jquery代码:
     
 	$(div a:first-child)		会选中1,2,5。等同于$(div a:nth-child(0));
-	$(div a:only-child)			会选中1
+	$(div a:only-child)		会选中1
 	$(div a:nth-child(1))		会选中3,6
 	$(div a:nth-last-child(0))	会选中1,4,6。等同于$(div a:last-child);
 
 ### 4.6 表单元素选择器 ###
 	‘:input’		匹配所有input，textarea，select和button元素
-	‘:text’			匹配所有文本框
+	‘:text’		匹配所有文本框
 	‘:password'’		匹配所有密码框
 	‘:radio’		匹配所有单选框
 	‘:checkbox’		匹配所有复选框
@@ -108,7 +110,8 @@ jquery代码:
 	‘:image’		匹配所有图像域
 	‘:reset’		匹配所有重置按钮
 	‘:button’		匹配所有按钮
-	‘:file’			匹配所有文件域
+	‘:file’		匹配所有文件域
+
 ##### `大部分表单类型筛选器都可以类似于$('input:password') == $('input[type=password]')来替换` #####
 ***
 
