@@ -17,13 +17,13 @@ tags: 操纵DOM jQuery 原创
 ## 2 插入DOM ##
 #### 子元素插入： ####
 
-	$('xx').append(element)		元素里面插个小儿子
-	$('xx').prepend(element)	元素里面插个大儿子
+	$('xx').append(element)			元素里面插个小儿子
+	$('xx').prepend(element)		元素里面插个大儿子
 
 #### 兄弟元素插入： ####
 
-	$('xx').after(element)		紧挨着元素后面跟个兄弟
-	$('xx').before(element)		紧挨着元素前面顶个大哥
+	$('xx').after(element)			紧挨着元素后面跟个兄弟
+	$('xx').before(element)			紧挨着元素前面顶个大哥
 
 ## 3 删除DOM ##
 	$('xx').empty()				清空结点,保留自身
@@ -47,8 +47,8 @@ eg：
 
 ## 4 复制和替换 ##
 
-	$('xx').clone([boolean])		复制。true时事件与数据一并克隆
-	$('xx').replaceWith(element)		替换目标集合每个元素
+	$('xx').clone([boolean])			复制。true时事件与数据一并克隆
+	$('xx').replaceWith(element)			替换目标集合每个元素
 
 ## 5 包裹，加减个爸爸 ##
 加个爸爸：
@@ -56,8 +56,8 @@ eg：
 	$('xx').wrap('html结构/ele/$')			操作单个元素，给一个人加个爸爸
 	$('xx').wrapAll('html结构/ele/$')		操作多个元素，给一群人加个爸爸
 
-	ps:都可传function(){return 'html结构'}每遇到匹配元素，执行函数。
-	
+ps:都可传function(){return 'html结构'}每遇到匹配元素，执行函数。
+
 
 减个爸爸：
 
@@ -109,11 +109,11 @@ eg:
 
 找祖宗：
 
-	$('xx').parent()				只找爸爸，可传express
-	$('xx').closets(express)			找祖宗，找到一个匹配便停止
+	$('xx').parent()			只找爸爸，可传express
+	$('xx').closets(express)		找祖宗，找到一个匹配便停止
 
 找兄弟：
 
-	$('xx').next()			找紧挨着的后面的兄弟,可传express
-	$('xx').prev()			找紧挨着的前面的兄弟,可传express
-	$('xx').siblings()		找所有兄弟，可传express
+	$('xx').next()				找紧挨着的后面的兄弟,可传express
+	$('xx').prev()				找紧挨着的前面的兄弟,可传express
+	$('xx').siblings()			找所有兄弟，可传express
