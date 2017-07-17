@@ -6,9 +6,9 @@ categories: Jquery
 tags: 选择器 jquery 原创
 ---
 ## 1. Jquery对象与DOM转换： ##
-`var $div = $(document.getElementById('div'))`;//dom对象转jquery对象  
-`var div1 = $div.get(0);`		//方法1：dom对象转jquery对象<br/>
-`var div2=$div[0];`			//方法2：dom对象转jquery对象
+	var $div = $(document.getElementById('div'));//dom对象转jquery对象
+	var div1 = $div.get(0);		//方法1：dom对象转jquery对象<br/>
+	var div2=$div[0];			//方法2：dom对象转jquery对象`
 
 ## 2. 常规选择器: ##
 	‘#’		:id选择器		源码getElementById()
