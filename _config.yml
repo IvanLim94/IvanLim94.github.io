@@ -31,7 +31,7 @@ duoshuo_shortname: Ivan Lim
 
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 
 sass:
