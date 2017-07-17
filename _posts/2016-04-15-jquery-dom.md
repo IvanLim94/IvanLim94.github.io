@@ -19,6 +19,7 @@ tags: 操纵DOM jQuery 原创
 
 	$('xx').append(element)		元素里面插个小儿子
 	$('xx').prepend(element)	元素里面插个大儿子
+
 #### 兄弟元素插入： ####
 
 	$('xx').after(element)		紧挨着元素后面跟个兄弟
@@ -31,6 +32,7 @@ tags: 操纵DOM jQuery 原创
 	以下支持传表达式参数：
 	$('xx').remove(express)
 	$('xx').detach(express)			根据表达式筛选过滤后删除
+
 eg：
 
 	$('xx').remove(':contains("3")')	筛选子文本后删除结点
@@ -39,9 +41,9 @@ eg：
 
 **ps:**三者之间的区别：<br/>
 
-1. .empty( )丢盔弃甲，孤身一人，.remove( )战败，自刎。<br/>
-2. .remove( )和detach( )可以传一个表达式，.empty( )不能。
-3. .detach( )后依然存于内存中，append( )会回到DOM tree中，同时数据和事件依然存在，满战斗力复活。
+1. empty( )丢盔弃甲，孤身一人，.remove( )战败，自刎。<br/>
+2. remove( )和detach( )可以传一个表达式，.empty( )不能。
+3. detach( )后依然存于内存中，append( )会回到DOM tree中，同时数据和事件依然存在，满战斗力复活。
 
 ## 4 复制和替换 ##
 
@@ -53,6 +55,7 @@ eg：
 
 	$('xx').wrap('html结构/ele/$')			操作单个元素，给一个人加个爸爸
 	$('xx').wrapAll('html结构/ele/$')		操作多个元素，给一群人加个爸爸
+
 	ps:都可传function(){return 'html结构'}每遇到匹配元素，执行函数。
 	
 
