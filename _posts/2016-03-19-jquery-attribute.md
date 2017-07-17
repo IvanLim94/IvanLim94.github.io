@@ -28,10 +28,12 @@ removeAttr('attr')	:移除一个属性
 	0个参数：	.html()			获取第一个匹配元素HTML内容
 	1个参数：	.html('str')		设置每一个匹配元素HTML内容
 			.html(fuc)		func用来返回设置HTML内容的函数
->func回调函数接收 **元素的数组索引和该元素内的html值**<br/>
+
+
+> func回调函数接收 **元素的数组索引和该元素内的html值**<br/>
 
 ### .text( )方法 ###
-和.html( )类似，传参一致<br>
+和.html( )类似，传参一致。<br>
 **区别:**<br>
 	1 .html( )方法处理的是**元素内容，包括标签**。而.text()方法处理的仅是文本内容，不包含标签<br>
 	2 .html( )方法在使用在多个元素上时，只能读取第一个元素而text( )会读取所有元素，组成合集输出
@@ -42,7 +44,7 @@ removeAttr('attr')	:移除一个属性
 样式增加：<br>
 
 	.addClass(str);
-	.addClass(function(index,currentClass));返回一个或多个要增加的样式名
+	.addClass(function(index,currentClass));	返回一个或多个要增加的样式名
 
 样式删除：
 
@@ -50,7 +52,7 @@ removeAttr('attr')	:移除一个属性
 	.removeClass(function(index,currentClass));返回一个或多个要删除的样式名
 
 
-> **注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
+**注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
 
 样式切换：
 
