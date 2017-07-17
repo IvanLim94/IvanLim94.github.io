@@ -8,9 +8,9 @@ tags: 属性与样式 jQuery 原创
 
 ## 1 .atrr( )和removeAttr( ) ##
 	1个参数：	'attr'								获取该属性值
-				{'attr1':'val1','attr2':'val2',..}	传入对象设置属性值
+			{'attr1':'val1','attr2':'val2',..}	传入对象设置属性值
 	2个参数：	'attr','val'	设置属性值
-				'attr',func		设置属性的函数值
+			'attr',func		设置属性的函数值
 >func回调函数接收元素的**索引位置和该元素attr值**<br/>
 >eg：<br/>
 >$('xx').attr('id',function(index,val){<br>
@@ -20,11 +20,11 @@ tags: 属性与样式 jQuery 原创
 
 removeAttr('attr')	:移除一个属性
 
-##2 .html( )和.text( ) ##
-### .html( )方法
+## 2 .html( )和.text( ) ##
+### .html( )方法 ###
 	0个参数：	.html()			获取第一个匹配元素HTML内容
-	1个参数：	.html('str')	设置每一个匹配元素HTML内容
-				.html(fuc)		func用来返回设置HTML内容的函数
+	1个参数：	.html('str')		设置每一个匹配元素HTML内容
+			.html(fuc)		func用来返回设置HTML内容的函数
 >func回调函数接收 **元素的数组索引和该元素内的html值**<br/>
 
 ### .text( )方法 ###
@@ -36,27 +36,30 @@ removeAttr('attr')	:移除一个属性
 ##### .val( )用于处理表单元素的value #####
 
 ## 3 样式增减和切换 ##
-样式增加<br>
+样式增加：<br>
 
 	.addClass(str);
 	.addClass(function(index,currentClass));返回一个或多个要增加的样式名
-样式删除
+
+样式删除：
 
 	.removeClass(str);
 	.removeClass(function(index,currentClass));返回一个或多个要删除的样式名
+
 >**注意：** 函数作为参数，返回多个class时，用空格隔开。<br>
 
-样式切换
+样式切换：
 
 	.toggleClass(className);若有该类，则删除；若无则添加。实现切换
 
-## 4 .css( )
+## 4 .css( ) ##
 	1个参数	'property'			获取该css样式的值
-			{'pro1':'val1','pro2':'val2',...}	批量设置css样式值
+		{'pro1':'val1','pro2':'val2',...}	批量设置css样式值
 	2个参数	'property','val'	设置css样式值
-			'property',function(index,val)
+		'property',function(index,val)
 
 >func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
+
 **ps：** .css( )方法设置的样式要**优先**于.addClass( )方法设置的样式
 
 ## 5 临时数据存储 ##
@@ -65,6 +68,7 @@ removeAttr('attr')	:移除一个属性
 	jQuery.data(element,key,value);	存数据
 	jQuery.data(element,key);		取数据
 	jQuery.removeData(element [,name]);	删除数据
+
 ##### ps：element是DOM对象<br> #####
 
 实例接口：
