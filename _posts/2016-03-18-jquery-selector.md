@@ -7,13 +7,13 @@ tags: 选择器 jquery 原创
 ---
 ## 1. Jquery对象与DOM转换： ##
 `$(document.getElementById('div'))`;//jquery对象转dom对象  
-`var div1 = $div.get(0);`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//方法1：dom对象转jquery对象<br/>
+`var div1 = $div.get(0);`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //方法1：dom对象转jquery对象<br/>
 `var div2=$div[0];`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//方法2：dom对象转jquery对象
 ***
 ## 2. 常规选择器： ##
 	‘#’		:id选择器		源码getElementById()
-	‘.’		:类选择器		 源码getElementsByClassName()
-	‘xx’	:xx元素选择器	 	源码getElementsByTagName()
+	‘.’		:类选择器		源码getElementsByClassName()
+	‘xx’	:xx元素选择器		源码getElementsByTagName()
 	‘*’		:全选择器
 ## 3. 层选择器： ##
 	通过与参考点选择器的关系选择
@@ -27,7 +27,7 @@ tags: 选择器 jquery 原创
 ### 4.1 基本筛选 ###
 	‘:first’			:匹配第一个元素
 	‘:last’				:匹配最后一个
-	‘not(selector)’		:匹配除指定selector以外的所有
+	‘not(selector)’ 	:匹配除指定selector以外的所有
 	‘:eq(index)’		:匹配第index个
 	‘:gt(index)’		:匹配索引大于index的所有
 	‘:lt(index)’		:匹配索引小于index的所有
