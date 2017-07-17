@@ -29,7 +29,7 @@ tags: 选择器 jquery 原创
 ### 4.1 基本筛选: ###
 	‘:first’		:匹配第一个元素
 	‘:last’		:匹配最后一个
-	‘not(selector)’		:匹配除指定selector以外的所有
+	‘not(selector)’ :匹配除指定selector以外的所有
 	‘:eq(index)’		:匹配第index个
 	‘:gt(index)’		:匹配索引大于index的所有
 	‘:lt(index)’		:匹配索引小于index的所有
@@ -49,12 +49,11 @@ tags: 选择器 jquery 原创
 	‘:empty’		:选择所有不含子元素或者文本的元素
 
 ### 4.3可见性筛选： ###
-	‘:visible’			:选择所有显示元素
-	‘:hidden’			:选择所有隐藏元素
+	‘:visible’		:选择所有显示元素
+	‘:hidden’		:选择所有隐藏元素
 
 **ps:** 若元素占据文档一定空间，则被认为是可见的。
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**css属性**中的visibility：hidden或opacity: 0的元素都被认为是可见的，因为他们占据空间布局。
-***
 
 ### 4.4 属性筛选： ###
 ###### 基于属性名和值筛选 ######
@@ -113,14 +112,12 @@ jquery代码:
 	‘:file’		匹配所有文件域
 
 ##### `大部分表单类型筛选器都可以类似于$('input:password') == $('input[type=password]')来替换` #####
-***
 
 ### 4.7 表单对象属性筛选选择器 ###
 	‘:enabled’		匹配可用的表单元素
 	‘:disabled’		匹配不可用的表单元素
 	‘:checked’		匹配被选中的input元素
 	‘:selected’		匹配被选中的option元素，下拉框适用
-***
 
 ## 总结 ##
 这些选择器表达式都应该放在' $() '中的'( )'里面，匹配根据**元素名，元素与其父或其子的关系，元素的属性，元素的位置，元素的子内容等**，结果返回为Jquery对象。
