@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jquery属性与样式总结"
+title:  "jQuery属性与样式总结"
 date: 2015-07-23 10:21:49
 categories: jQuery
 tags: 属性与样式 jQuery 原创
@@ -15,10 +15,10 @@ tags: 属性与样式 jQuery 原创
 func回调函数接收元素的**索引位置和该元素attr值。**<br/>
 	
 	eg：
-	$('xx').attr('id',function(index,val){<br>
-		console.log('当前正在处理第'+ i +'个元素');<br>
-		console.log('该被处理元素的attr值为：'+ val );<br>
-	})<br>
+	$('xx').attr('id',function(index,val){
+		console.log('当前正在处理第'+ i +'个元素');
+		console.log('该被处理元素的attr值为：'+ val );
+	})
 
 removeAttr('attr')	:移除一个属性。
 
@@ -63,7 +63,7 @@ func回调函数接收 **元素的数组索引和该元素内的html值**。<br/
 		'property',function(index,val)
 
 
-func回调函数接收 **元素的数组索引和该元素的css样式值**<br/>
+func回调函数接收 **元素的数组索引和该元素的css样式值**。<br/>
 
 **ps：** .css( )方法设置的样式要**优先**于.addClass( )方法设置的样式。
 
