@@ -10,7 +10,7 @@ tags: 操纵DOM jQuery 原创
 	$('xx').each(function(index,ele))	遍历合集对象，调用回调方法
 
 每读取一次，便调用一次回调方法。<br>
-*ps：回调函数内的ele==this*
+*ps：回调函数内ele==this*
 
 	$('xx').add(html结构/ele)		向合集对象添加新元素	
 
